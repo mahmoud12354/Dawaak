@@ -83,7 +83,6 @@ class categoryController extends Controller
         $data->type = $request->type;
 
         $data->save();
-        // return redirect()->back()->with('message','product added Successfully');
         return redirect()->back()->with('message', 'product added Successfully');
     }
     //====================================================================

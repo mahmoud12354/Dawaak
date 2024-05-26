@@ -62,9 +62,13 @@ class AuthManager extends Controller
     }
     //--------------------------------------------
     public function logout()
-{
-    Auth::logout();
-    return Redirect::route('login');
-}
+    {
+        Auth::logout();
+        return Redirect::route('login');
+    }
+
+    //--------------------------------------------
+    
+    
 
 }

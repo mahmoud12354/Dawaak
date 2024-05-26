@@ -82,13 +82,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-cog"></i>
-                    <p>Setting</p>
+                <a href="{{route('admincart')}}">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Carts</p>
                 </a>
             </li>
             <li class="out">
-                <a href="./LogIn.Html">
+                <a href="{{route('logout')}}">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
                 </a>
@@ -96,13 +96,20 @@
         </div>
         </ul>
     </div>
-    
+
     <div class="content">
+        
+        @if(session('message'))
+            <div class="alert alert-success">
+                {{session('message')}}
+            </div>
+        @endif
         <div class="das">
             <p>Donors <i class="fa-brands fa-hire-a-helper"></i></p>
             <i class="fas fa-chart-bar "></i>
         </div>
         <table class="table table-dark">
+            
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -113,6 +120,8 @@
                         <th scope="col">Medical Name</th>
                         <th scope="col">Expired Date</th>
                         <th scope="col">Descrpition</th>
+                        <th scope="col">Status</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -122,10 +131,12 @@
                         <td>{{$donation->full_name}}</td>
                         <td>{{$donation->email}}</td>
                         <td>{{$donation->phone}}</td>
-                        <td>{{$donation->address}}</td>
+                        <td>{{$donation->city}},{{$donation->city}},{{$donation->Street_Name}},{{$donation->bluiding_No}},{{$donation->apartment}},{{$donation->land_mark}},</td>
                         <td>{{$donation->medical_name}}</td>
                         <td>{{$donation->expired_date}}</td>
                         <td>{{$donation->description}}</td>
+                        <td style="padding: 0px 9px;"><a href="{{url('deletedonation', $donation->id)}}">Received</a></td>   
+                    
                     </tr>
                     @endforeach
                 </tbody>

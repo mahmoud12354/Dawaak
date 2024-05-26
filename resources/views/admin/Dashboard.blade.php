@@ -72,13 +72,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-cog"></i>
-                    <p>Setting</p>
+                <a href="{{route('admincart')}}">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Carts</p>
                 </a>
             </li>
             <li class="out">
-                <a href="./LogIn.Html">
+                <a href="{{route('logout')}}">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
                 </a>

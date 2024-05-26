@@ -58,13 +58,13 @@
                 </a>
             </li>
             <li>
-                <a href="{{route('Donors')}}" >
+                <a href="{{route('Donors')}}">
                     <i class="fa-brands fa-hire-a-helper"></i>
                     <p>Donors</p>
                 </a>
             </li>
             <li>
-                <a href="{{route('adminrosheta')}}"class="D">
+                <a href="{{route('adminrosheta')}}">
                     <i class="fa-solid fa-clipboard-list"></i>
                     <p>Order with rosheta</p>
                 </a>
@@ -82,7 +82,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{route('admincart')}}">
+                <a href="{{route('admincart')}}"class="D" >
                     <i class="fa-solid fa-cart-shopping"></i>
                     <p>Carts</p>
                 </a>
@@ -96,7 +96,7 @@
         </div>
         </ul>
     </div>
-    
+
     <div class="content">
         
         @if(session('message'))
@@ -105,39 +105,45 @@
             </div>
         @endif
         <div class="das">
-            <p>Donors <i class="fa-brands fa-hire-a-helper"></i></p>
+            <p>Carts <i class="fa-brands fa-hire-a-helper"></i></p>
             <i class="fas fa-chart-bar "></i>
         </div>
         <table class="table table-dark">
+            
                 <thead>
                     <tr>
-                        <th scope="col">Full Name</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
-                        
-                        <th scope="col">Description</th>
                         <th scope="col">Address</th>
-                        <th scope="col">Images</th>
-                        
+                        <th scope="col">Medical Name</th>
+                        <th scope="col">Expired Date</th>
+                        <th scope="col">Descrpition</th>
                         <th scope="col">Status</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($roshetas as $rosheta)
+                    @foreach($admincart as $cart)
                     <tr>
-                        <td>{{$rosheta->full_name}}</td>
-                        <td>{{$rosheta->email}}</td>
-                        <td>{{$rosheta->phone}}</td>
-
-                        <td>{{$rosheta->description}}</td>
-                        <td>{{$rosheta->city}},{{$rosheta->Street_Name}},{{$rosheta->land_mark}},{{$rosheta->bluiding_No}},{{$rosheta->floor}},{{$rosheta->apartment}}</td>
-                        <td><img src="/roshetaimage/{{$rosheta->image}}" draggable="false" alt='' style="width:100px; height:100px;"></td>
-                        <td style="height: 61px;"><a style="height:40px;  width: 60px; padding-left:7px;padding-bottom: 18px;" href="{{url('deleterosheta', $rosheta->id)}}">has delivered</a></td>   
+                        <th scope="row">{{$cart->id}}</th>
+                        <td>{{$cart->name}}</td>
+                        <td>{{$cart->email}}</td>
+                        <td>{{$cart->phone}}</td>
+                        <td>{{$cart->city}},{{$cart->street_name}},{{$cart->bluid_No}},{{$cart->apartment}},{{$cart->landmark}},</td>
+                        <td>{{$cart->product_title}}</td>
+                        <td>{{$cart->quantity}}</td>
+                        <td>{{$cart->Total}}</td>
+                        <td style="padding: 0px 9px;"><a href="{{url('deletecart', $cart->id)}}">have been delivered</a></td>   
+                    
                     </tr>
                     @endforeach
                 </tbody>
             </table>
 
     </div>
+
+
 </body>
 </html>

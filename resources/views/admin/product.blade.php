@@ -73,13 +73,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-cog"></i>
-                    <p>Setting</p>
+                <a href="{{route('admincart')}}">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Carts</p>
                 </a>
             </li>
             <li class="out">
-                <a href="./LogIn.Html">
+                <a href="{{route('logout')}}">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
                 </a>
@@ -89,6 +89,12 @@
     </div>
 
     <div class="content">
+        
+        @if(session('message'))
+            <div class="alert alert-success">
+                {{session('message')}}
+            </div>
+        @endif
         <div class="dashboard-title">
             <i class="fas fa-box"></i> Best Seller
         </div>

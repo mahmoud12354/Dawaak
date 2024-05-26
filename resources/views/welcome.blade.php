@@ -105,12 +105,6 @@
 	<!---End Gategories ---->
     <!--- start bestseller --->
     
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{session('success')}}
-        </div>
-    
-    @endif
     <div class="wrapper">
         <div class="head">
             <p>Best seller</p> 

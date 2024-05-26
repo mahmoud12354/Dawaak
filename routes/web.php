@@ -97,17 +97,38 @@ Route::get('/search',[categoryController::class,'search'])->name('search');
 
 //---------------admin-------------------------------------------------------------
 Route::get('admin/Dasboard',[homeController::class,'dashboard'])->name('dashboard');
+
 Route::get('admin/product',[homeController::class,'product'])->name('product');
+
 Route::get('admin/product1',[homeController::class,'product1'])->name('product1');
+
 Route::get('admin/category',[homeController::class,'product2'])->name('product2');
+
 Route::Post('admin/uploadbestseller',[homeController::class,'uploadbestseller'])->name('uploadbestseller');
+
 route::Post('admin/uploadnewarrival',[homeController::class,'uploadnewarrival'])->name('uploadnewarrival');
+
 Route::Post('admin/uploadcategory',[categoryController::class,'uploadcategory'])->name('uploadcategory');
+
 Route::get('admin/Donors',[homeController::class,'Donors'])->name('Donors');
+
 Route::get('admin/Users',[homeController::class,'Users'])->name('Users');
+
+Route::get('admin/cart',[homeController::class,'admincart'])->name('admincart');
+
 route::get('admin/medicines',[homeController::class,'allmedincine'])->name('allmedincine');
+
 route::get('admin/rosheta',[homeController::class,'adminrosheta'])->name('adminrosheta');
 
+route::get('/deleterosheta/{id}',[homeController::class, 'deleterosheta']);
+
+route::get('/deletedonation/{id}',[homeController::class, 'deletedonation']);
+
+route::get('/deleteproduct/{id}',[homeController::class, 'deleteproduct']);
+
+route::get('/deletecart/{id}',[homeController::class, 'deletecart']);
+
+Route::get('/admin/logout', [AuthManager::class,'logout'])->name('admin.logout');
 //------------------------------cahtbot----------------------------------------------
 
 Route::match(['get','post'],'/botman',[BotmanController::class,'handle']);

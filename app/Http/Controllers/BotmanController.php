@@ -30,6 +30,8 @@ class BotmanController extends Controller
     public function chatbot() {
         if (Auth::check()){
             return view('chatbot');
+        }else{
+            return view('login');
         }
     }
 }

@@ -12,6 +12,7 @@ use App\Models\rosheta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 use PDO;
 
@@ -23,7 +24,7 @@ class homeController extends Controller
         if(AUth::check()){
             return view ('admin.Dashboard');
         }else{
-            return view('login');
+            return Redirect::route('login');
         }
     }
     //----------------------------------------------
@@ -52,6 +53,10 @@ class homeController extends Controller
     public function Users(){
         $user = User::all();
         return view('admin.Users', compact('user'));
+    }
+    public function admincart(){
+        $admincart = cart::all();
+        return view('admin.cart', compact('admincart'));
     }
     //----------------------------------------------
     public function adminrosheta(){
@@ -112,9 +117,8 @@ class homeController extends Controller
 
         $data->save();
 
-        return response()->json([
-            'message' => 'product upload successful',
-        ], 200);
+
+        return redirect()->back()->with('message','product added Successfully');
     }
 
     //--------------------------------------------------
@@ -135,10 +139,7 @@ class homeController extends Controller
 
         
         $data1 ->save();
-        // return redirect()->back()->with('message','product added Successfully');
-        return response()->json([
-            'message' =>'product upload succefull',
-        ],200);
+        return redirect()->back()->with('message','product added Successfully');
     }
     // ------------------------------------------------------------------
     
@@ -175,6 +176,34 @@ class homeController extends Controller
         }
     }
     //-----------------------------------------------------------------------------------------
+    public function deleterosheta($id)
+    {
+        $data=rosheta::find($id);
+        $data->delete();
+        return redirect()->back()->with('message' , 'The order was delivered successfully');
+    }
+    //-----------------------------------------------------------------------------------------
+    public function deletedonation($id)
+    {
+        $data=donation::find($id);
+        $data->delete();
+        return redirect()->back()->with('message' , 'The request has been received successfully');
+    }
+    //-----------------------------------------------------------------------------------------
+    public function deleteproduct($id)
+    {
+        $data=donation::find($id);
+        $data->delete();
+        return redirect()->back()->with('message' , 'The product has been deleted successfully');
+    }
+    //-----------------------------------------------------------------------------------------
+    public function deletecart($id)
+    {
+        $data=cart::find($id);
+        $data->delete();
+        return redirect()->back()->with('message' , 'The order has been delivered');
+    }
+    // -----------------------------------------------------------------------------------------
     public function up(Request $request)
     {
         if(auth::id()){

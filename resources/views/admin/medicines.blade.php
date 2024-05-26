@@ -82,13 +82,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-cog"></i>
-                    <p>Setting</p>
+                <a href="{{route('admincart')}}">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Carts</p>
                 </a>
             </li>
             <li class="out">
-                <a href="./LogIn.Html">
+                <a href="{{route('logout')}}">
                     <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
                 </a>
@@ -108,9 +108,9 @@
                         <th scope="col">ID</th>
                         <th scope="col">Medicine Name</th>
                         <th scope="col">Medicine price</th>
-                        <th scope="col">Description</th>
                         <th scope="col">images</th>
-                        
+                        <th scope="col">Delete</th>
+                        <th scope="col">update</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -119,8 +119,9 @@
                         <th scope="row">{{$category->id}}</th>
                         <td>{{$category->title}}</td>
                         <td>{{$category->price}} EGP</td>
-                        <td>{{$category->description}}</td>
                         <td><img src="/productimage/{{$category->image}}" draggable="false" alt='' style="width:100px; height:100px;"></td>
+                        <td style="padding: 0px 9px;"><a href="{{url('deleteproduct', $category->id)}}">Delete</a></td>
+                        <td style="padding: 0px 9px;"><a href="{{url('', $category->id)}}">update</a></td>
                     </tr>
                     @endforeach
                 </tbody>

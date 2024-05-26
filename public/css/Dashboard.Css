@@ -117,6 +117,7 @@ ul li{
 }
 ul li a:hover,.D,.box:hover,td:hover,th:hover{
     background-color: #ffffff55;
+    color: #000;
 
 }
 .content{
@@ -176,11 +177,20 @@ table{
 th , td{
     background-color: #123;
     height: 40px;
+    padding: 0px 9px;
     border-radius: 10px;
-    font-weight: 600;
+    font-size: 14px;
     color: white;
     transition: .5s;
     
+}
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    padding: 16px 0;
+    border-radius: 6px;
+    text-align: center;
 
 }
 th{

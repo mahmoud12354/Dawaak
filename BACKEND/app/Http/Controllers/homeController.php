@@ -17,7 +17,11 @@ use Symfony\Component\VarDumper\Caster\RedisCaster;
 class homeController extends Controller
 {
     public function dashboard(){
-        return view ('admin.Dashboard');
+        if (Auth::check()){
+            return view ('admin.Dashboard');
+        }else{
+            return view('../login');
+        }
     }
     //----------------------------------------------
     public function product(){
