@@ -1,0 +1,418 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up",
+                "Good morning",
+                "Good evening",
+                "hello",
+                "hey",
+                "what's up"
+            ],
+            "responses": [
+                "iam fine",
+                "Good to see you!",
+                "Hi there, how can I help?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "See you later",
+                "Goodbye",
+                "I am Leaving",
+                "Have a Good day",
+                "bye",
+                "i have to go",
+                "gotta go"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old",
+                "how old are you",
+                "what is your age",
+                "how old are you",
+                "age?"
+            ],
+            "responses": [
+                "I am old and wise",
+                "trying to stay fit and young!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name",
+                "what should I call you",
+                "whats your name?",
+                "who are you?"
+            ],
+            "responses": [
+                "You can call me Dawaak.",
+                "I'm Dawaak",
+                "I'm Dawaak."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "panadol",
+            "patterns": [
+                "what is panadol",
+                "What is Panadol used for?",
+                "What are the uses of Panadol?",
+                "Why would someone take Panadol?",
+                "When should I take Panadol?",
+                "For what conditions is Panadol recommended?"
+            ],
+            "responses": [
+                "Panadol is a brand of acetaminophen (also known as paracetamol) used to relieve mild to moderate pain and reduce fever. It is commonly used for headaches, toothaches, muscle aches, menstrual cramps, arthritis, colds, and flu symptoms."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "panadol children",
+            "patterns": [
+                "Can children take Panadol?",
+                "What is Children's Panadol used for?",
+                "What are the uses of Children's Panadol?",
+                "Why would I give Children's Panadol to my child?",
+                "When should I give Children's Panadol to my child?",
+                "For what conditions is Children's Panadol recommended?"
+            ],
+            "responses": [
+                "Children's Panadol is a liquid formulation of paracetamol, designed specifically for children, used to reduce fever and relieve mild to moderate pain. It is commonly given to children for conditions such as teething pain, headaches, sore throats, earaches, and fevers associated with colds or flu."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "panadol dosage",
+            "patterns": [
+                "What is the recommended dosage for Panadol?",
+                "How much Panadol should I take?",
+                "What is the proper dose of Panadol?",
+                "How many Panadol tablets should I consume?",
+                "What is the correct Panadol dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Panadol depends on various factors such as age, weight, and the formulation of the medication. For adults and children over 12 years old, the typical dose is 500mg to 1000mg every 4 to 6 hours as needed, with a maximum daily dose of 4000mg. For children, the dosage is based on their weight and age, and it is important to follow the instructions provided by a healthcare professional or the product label."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "panadol sides effect",
+            "patterns": [
+                "What are the side effects of Panadol?",
+                "Are there any adverse effects of taking Panadol?",
+                "What are the potential side effects of using Panadol?",
+                "Can Panadol cause any negative reactions?",
+                "Are there any risks associated with Panadol usage?"
+            ],
+            "responses": [
+                "Panadol, when used as directed, is generally well-tolerated by most individuals. However, like any medication, it can have potential side effects. Common side effects of Panadol may include nausea, stomach upset, or allergic reactions such as skin rash or itching. In rare cases, it may cause liver damage, especially when taken in high doses or over a prolonged period. If you experience any severe or persistent side effects while taking Panadol, it's important to seek medical attention immediately."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Brufen",
+            "patterns": [
+                "What is Brufen?",
+                "What are the uses of Brufen?",
+                "Why would someone take Brufen?",
+                "When should I take Brufen?",
+                "For what conditions is Brufen recommended?",
+                "What is Brufen used for?"
+            ],
+            "responses": [
+                "Brufen, which contains ibuprofen, is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve pain, reduce inflammation, and lower fever. It is commonly used for conditions such as headaches, toothaches, menstrual cramps, muscle aches, arthritis, and to reduce fever associated with colds or flu."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Brufen childern",
+            "patterns": [
+                "What is Children's Brufen used for?",
+                "What are the uses of Children's Brufen?",
+                "Why would I give Children's Brufen to my child?",
+                "For what conditions is Children's Brufen recommended?",
+                "When should I give Children's Brufen to my child?"
+            ],
+            "responses": [
+                "Children's Brufen, which contains ibuprofen, is used to reduce fever and relieve pain or inflammation in children. It is commonly given to children for conditions such as teething pain, headaches, earaches, sore throats, muscle aches, minor injuries, and to reduce fever associated with colds or flu."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Brufen dosage",
+            "patterns": [
+                "What is the recommended dosage for Brufen?",
+                "How much Brufen should I take?",
+                "What is the proper dose of Brufen?",
+                "How many Brufen tablets should I consume?",
+                "What is the correct Brufen dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Brufen (ibuprofen) varies based on age and the specific condition being treated. For adults, the typical dose is 200-400 mg every 4-6 hours as needed, with a maximum daily dose of 3200 mg. For children, the dosage is based on their weight and age, typically 5-10 mg per kilogram of body weight, given every 6-8 hours as needed, with a maximum of 40 mg per kilogram per day. Always follow the instructions provided by a healthcare professional or on the product label."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Brufen sides effect",
+            "patterns": [
+                "What are the side effects of Brufen?",
+                "Are there any adverse effects of taking Brufen?",
+                "What are the potential side effects of using Brufen?",
+                "Can Brufen cause any negative reactions?",
+                "Are there any risks associated with Brufen usage?"
+            ],
+            "responses": [
+                "Brufen (ibuprofen) is generally well-tolerated, but it can cause side effects in some people. Common side effects include stomach pain, heartburn, nausea, vomiting, bloating, diarrhea, constipation, dizziness, and headache. Serious side effects, though rare, can include gastrointestinal bleeding, ulcers, kidney problems, liver damage, and allergic reactions such as rash, itching, swelling, or difficulty breathing. If you experience any severe or persistent side effects, seek medical attention immediately."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Enterogermina",
+            "patterns": [
+                "What is Enterogermina used for?",
+                "What are the uses of Enterogermina?",
+                "Why would someone take Enterogermina?",
+                "When should I take Enterogermina?",
+                "For what conditions is Enterogermina recommended?",
+                "what is Enterogermina? "
+            ],
+            "responses": [
+                "Enterogermina is a probiotic medication used to restore the natural balance of good bacteria in the gut. It is commonly used to treat and prevent diarrhea, especially when caused by infections or antibiotics, and to improve digestive health by supporting a healthy gut microbiome. Enterogermina can be used by both adults and children as directed by a healthcare professional."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Enterogermina dosage",
+            "patterns": [
+                "What is the recommended dosage for Enterogermina?",
+                "How much Enterogermina should I take?",
+                "What is the proper dose of Enterogermina?",
+                "How many vials of Enterogermina should I consume?",
+                "What is the correct Enterogermina dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Enterogermina varies based on age and the specific condition being treated. For adults, the typical dose is 2 to 3 vials per day, taken at regular intervals. For children, the usual dose is 1 to 2 vials per day. The vials can be taken as they are or diluted in water or another beverage. Always follow the instructions provided by your healthcare professional or on the product label for the most appropriate dosage for your specific situation."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Enterogermina sides effect",
+            "patterns": [
+                "What are the side effects of Enterogermina?",
+                "Are there any adverse effects of taking Enterogermina?",
+                "What are the potential side effects of using Enterogermina?",
+                "Can Enterogermina cause any negative reactions?",
+                "Are there any risks associated with Enterogermina usage?"
+            ],
+            "responses": [
+                "Enterogermina is generally well-tolerated, but some people may experience mild side effects. Common side effects can include gastrointestinal discomfort such as bloating, gas, or an upset stomach. These side effects are usually temporary and resolve on their own. Serious side effects are rare, but if you experience any severe reactions or symptoms, it's important to seek medical attention immediately."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "telfast",
+            "patterns": [
+                "What is Telfast used for?",
+                "What are the uses of Telfast?",
+                "Why would someone take Telfast?",
+                "When should I take Telfast?",
+                "For what conditions is Telfast recommended?",
+                "what is telfast?"
+            ],
+            "responses": [
+                "Telfast is an antihistamine medication used to relieve symptoms of allergic conditions such as hay fever (allergic rhinitis) and hives (urticaria). It works by blocking the effects of histamine, a substance produced by the body during an allergic reaction. Telfast can help relieve symptoms such as sneezing, runny or itchy nose, itchy or watery eyes, and itching of the throat or nose. It is typically taken once daily, with or without food, as directed by a healthcare professional."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "telfast dosage",
+            "patterns": [
+                "What is the recommended dosage for Telfast?",
+                "How much Telfast should I take?",
+                "What is the proper dose of Telfast?",
+                "How many Telfast tablets should I consume?",
+                "What is the correct Telfast dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Telfast (Fexofenadine) depends on various factors such as age, the severity of symptoms, and individual response to the medication. For adults and children aged 12 years and older, the typical dose is 60 mg or 180 mg once daily. For children aged 6 to 11 years, the recommended dose is 30 mg twice daily. Telfast should be taken with water, with or without food. It's essential to follow the dosing instructions provided by your healthcare professional or on the product label for the most appropriate dosage for your specific situation."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "telfast sides effect",
+            "patterns": [
+                "What are the side effects of Telfast?",
+                "Are there any adverse effects of taking Telfast?",
+                "What are the potential side effects of using Telfast?",
+                "Can Telfast cause any negative reactions?",
+                "Are there any risks associated with Telfast usage?"
+            ],
+            "responses": [
+                "Telfast (Fexofenadine) is generally well-tolerated, but like any medication, it can cause side effects in some individuals. Common side effects may include headache, drowsiness, nausea, dizziness, or dry mouth. These side effects are usually mild and temporary, and they may improve with continued use or as your body adjusts to the medication. Serious side effects are rare, but if you experience any severe reactions or symptoms, such as difficulty breathing, chest tightness, or swelling of the face, lips, tongue, or throat, it's important to seek medical attention immediately."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "sugarlo plus",
+            "patterns": [
+                "What is Sugarlo Plus used for?",
+                "What are the uses of Sugarlo Plus?",
+                "Why would someone take Sugarlo Plus?",
+                "When should I take Sugarlo Plus?",
+                "For what conditions is Sugarlo Plus recommended?",
+                "what is sugarlo plus?"
+            ],
+            "responses": [
+                "Sugarlo Plus is a dietary supplement used to help maintain healthy blood sugar levels already within the normal range. It contains a blend of vitamins, minerals, and botanical extracts that support glucose metabolism and insulin sensitivity. Sugarlo Plus may be taken by individuals seeking to support their overall metabolic health or by those looking to manage their blood sugar levels. It is essential to follow the dosage instructions provided by a healthcare professional or on the product label."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "sugarlo plus dosage",
+            "patterns": [
+                "What is the recommended dosage for Sugarlo Plus?",
+                "How much Sugarlo Plus should I take?",
+                "What is the proper dose of Sugarlo Plus?",
+                "How many Sugarlo Plus capsules should I consume?",
+                "What is the correct Sugarlo Plus dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Sugarlo Plus varies based on individual needs and the specific formulation of the supplement. Typically, the suggested dose is one to two capsules per day, taken with meals or as directed by a healthcare professional. It's essential to follow the dosage instructions provided on the product label or as recommended by your healthcare provider. Additionally, consult with your healthcare professional before starting any new supplement regimen, especially if you have any underlying medical conditions or are taking other medications."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "sugarlo sides effect",
+            "patterns": [
+                "What are the side effects of Sugarlo Plus?",
+                "Are there any adverse effects of taking Sugarlo Plus?",
+                "What are the potential side effects of using Sugarlo Plus?",
+                "Can Sugarlo Plus cause any negative reactions?",
+                "Are there any risks associated with Sugarlo Plus usage?"
+            ],
+            "responses": [
+                "Sugarlo Plus is generally well-tolerated when used as directed. However, like any dietary supplement, some individuals may experience mild side effects. Common side effects of Sugarlo Plus may include gastrointestinal discomfort such as bloating, gas, or upset stomach. These side effects are usually temporary and may improve with continued use or by adjusting the dosage. Serious side effects are rare, but if you experience any severe reactions or symptoms, such as allergic reactions or difficulty breathing, discontinue use and seek medical attention immediately."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "concor",
+            "patterns": [
+                "What is Concor used for?",
+                "What are the uses of Concor?",
+                "Why would someone take Concor?",
+                "When should I take Concor?",
+                "For what conditions is Concor recommended?",
+                "what is concor?"
+            ],
+            "responses": [
+                "Concor is a medication belonging to a class of drugs known as beta-blockers. It is primarily used to treat high blood pressure (hypertension), heart failure, and certain heart rhythm disorders. Concor works by blocking the action of certain natural substances in the body, such as adrenaline, which can increase heart rate and blood pressure. By reducing heart rate and relaxing blood vessels, Concor helps to lower blood pressure and improve heart function. It is important to take Concor exactly as prescribed by your healthcare professional to achieve the best results."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "concor dosage",
+            "patterns": [
+                "What is the recommended dosage for Concor?",
+                "How much Concor should I take?",
+                "What is the proper dose of Concor?",
+                "How many Concor tablets should I consume?",
+                "What is the correct Concor dosage?"
+            ],
+            "responses": [
+                "The recommended dosage of Concor (Bisoprolol) varies depending on the condition being treated and individual patient factors. For the management of high blood pressure (hypertension), the typical starting dose is usually 5 mg once daily. This may be increased gradually by your healthcare professional, based on your response to the medication. For heart failure, the starting dose may be lower, typically 1.25 to 2.5 mg once daily, and then increased gradually as tolerated. It's essential to follow the dosing instructions provided by your healthcare professional and to not adjust your dose without consulting them first."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "concor sides effect",
+            "patterns": [
+                "What are the side effects of Concor?",
+                "Are there any adverse effects of taking Concor?",
+                "What are the potential side effects of using Concor?",
+                "Can Concor cause any negative reactions?",
+                "Are there any risks associated with Concor usage?"
+            ],
+            "responses": [
+                "Concor (Bisoprolol) is generally well-tolerated, but like any medication, it can cause side effects in some individuals. Common side effects may include fatigue, dizziness, lightheadedness, headache, stomach upset, or trouble sleeping. These side effects are usually mild and temporary, and they may improve with continued use or as your body adjusts to the medication. However, some individuals may experience more serious side effects such as slow heart rate, difficulty breathing, chest pain, swelling of the hands or feet, or changes in mood or mental health. If you experience any severe or persistent side effects, it's important to seek medical attention promptly."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Feeling a headache ",
+            "patterns": [
+                "What can I take for a headache?",
+                "How do I make my headache feel better?",
+                "What should I do when my head hurts?",
+                "Which medicine helps with headaches?",
+                "What can I use to stop a headache?"
+            ],
+            "responses": [
+                " My apologies for the difficulties you're facing.You can take over-the-counter pain relievers such as acetaminophen (Tylenol), ibuprofen (Advil, Motrin), or aspirin to help alleviate headache pain. It's important to follow the recommended dosage instructions on the packaging or as advised by a healthcare professional. Additionally, getting plenty of rest, staying hydrated, and practicing relaxation techniques may also help relieve headache discomfort."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Feeling a Collywobbles ",
+            "patterns": [
+                "What can I take for collywobbles?",
+                "How do I make my collywobbles feel better?",
+                "What should I do when I have collywobbles?",
+                "Which medicine helps with collywobbles?",
+                "What can I use to stop collywobbles?"
+            ],
+            "responses": [
+                " My apologies for the difficulties you're facing.You can try over-the-counter remedies like antacids for indigestion or upset stomach, or herbal teas like ginger or peppermint. If symptoms persist, it's best to consult with a healthcare professional for further advice."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Feeling a teeth pain ",
+            "patterns": [
+                "What can I take for tooth pain?",
+                "How do I make my tooth pain feel better?",
+                "What should I do when I have tooth pain?",
+                "Which medicine helps with tooth pain?",
+                "What can I use to stop tooth pain?"
+            ],
+            "responses": [
+                " My apologies for the difficulties you're facing.You can try over-the-counter pain relievers like acetaminophen or ibuprofen to alleviate tooth pain. Additionally, applying a numbing gel directly to the affected area may provide temporary relief. However, it's important to consult with a dentist for proper evaluation and treatment if the pain persists."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Feeling a Bone pain ",
+            "patterns": [
+                "What can I take for bone pain?",
+                "How do I make my bone pain feel better?",
+                "What should I do when I have bone pain?",
+                "Which medicine helps with bone pain?",
+                "What can I use to stop bone pain?"
+            ],
+            "responses": [
+                " My apologies for the difficulties you're facing.For bone pain relief, you can try over-the-counter pain relievers like ibuprofen or acetaminophen. If the pain persists or worsens, it's important to consult with a healthcare professional for further evaluation and treatment options."
+            ],
+            "context_set": ""
+        }
+    ]
+}

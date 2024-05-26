@@ -1,0 +1,74 @@
+center form{
+    display: block;
+}
+center form .inputs{
+    display: table-caption;
+    margin: 15px 0;
+    border: 1px solid;
+    background: white;
+    width: 100vh;
+    border-radius: 10px;
+
+}
+center form  span{
+    font-size: x-large;
+    font-weight: bold;
+}
+center form .inputs h1{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 145px;
+}
+center form .inputs h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 26px;
+}
+center form .inputs input{
+    margin-bottom: 10px;
+    width: 417px;
+    height: 36px;
+}
+center form .confirm{
+    background: #29D0D8;
+    font-weight: 600;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    margin: 10px 0 37px;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: 'Work Sans';
+
+}
+
+center form .inputs textarea{
+    width: 60%;
+    height: 100px;
+}
+center form .inputs .address .street{
+    width: 132px;
+}
+center form .inputs .address .apartment{
+    width: 200px;
+}
+
+center form .inputs .address .landmark{
+    width: 200px;
+}
+form .inputs .address{
+    margin-bottom: 20px;
+}
+form .inputs .address h1{
+    font-size: 20px;
+}
+form .inputs .address .city{
+    width: 150px;
+}
+form .inputs .address .bluidNo{
+    width: 50px;
+}
+form .inputs .address .floor{
+    width: 50px;
+}

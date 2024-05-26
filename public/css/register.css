@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+display: block;
+background: #fff;
+}
+.conitneer{
+    display: flex;
+    width: 948px;
+    justify-content: center;
+    background: white;
+    /* box-shadow: 10px 10px 0px; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 18%;
+    margin-top: 20px;
+}
+.wrapper{
+position: relative;
+max-width: 430px;
+width: 100%;
+background: #fff;
+padding: 34px;
+border-radius: 6px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+position: relative;
+font-size: 22px;
+font-weight: 600;
+color: #333;
+}
+.conitneer img{
+    width: 50%;
+    margin-left: 39px;
+    height: 559px;
+
+}
+.wrapper h2::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 3px;
+width: 28px;
+border-radius: 12px;
+background: #29D0D8;
+}
+.wrapper form{
+margin-top: 30px;
+}
+.wrapper form .input-box{
+height: 52px;
+margin: 18px 0;
+}
+form .input-box input{
+height: 100%;
+width: 100%;
+outline: none;
+padding: 0 15px;
+font-size: 17px;
+font-weight: 400;
+color: #333;
+border: 1.5px solid #C7BEBE;
+border-bottom-width: 2.5px;
+border-radius: 6px;
+transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+border-color: #4070f4;
+}
+.wrapper form p{
+	font-size: 11px;
+    font-weight: 500;
+    color: #adb5bd;
+}
+form .policy{
+display: flex;
+align-items: center;
+}
+form h3{
+color: #707070;
+font-size: 14px;
+font-weight: 500;
+margin-left: 10px;
+}
+.input-box.button button{
+width: 100%;
+height:  52px;
+border-radius: 5%;
+color: #fff;
+letter-spacing: 1px;
+border: none;
+background: #3dd1d8;
+border-radius: 10px;
+cursor: pointer;
+}
+.input-box.button button:hover{
+background: #3dd1d8;
+}
+form .text h3{
+color: #333;
+width: 100%;
+text-align: center;
+}
+form .text h3 a{
+color: #4070f4;
+text-decoration: none;
+}
+form .text h3 a:hover{
+text-decoration: underline;
+}
+
+/*start header*/
+.header{
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #bcb8b8;
+}
+.header .container{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.header .logo{
+	width:100px
+}
+.header .link-center{
+	text-align: center;
+	justify-content: center;
+}
+.header .link-center a{
+	list-style: none;
+	text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+	letter-spacing: -1px;
+	padding: 0 20px 0 20px;
+	color: var(--secondary-color);
+}
+
+.header .link-center .cart{
+    display: none;
+}
+
+.header .links{
+	position:relative;
+}
+.header .links .icon:hover span:nth-child(2){
+	width:100%;
+}
+.header .links .icon{
+	width:30px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+}
+/*  لعمل الثلاث  خطوط بدل من ان احيبها من علي النت جاهزة*/
+
+.header .links .icon span{
+	background-color:#333;
+	margin-bottom:4px;
+	height:2px;
+}
+.header .links .icon span:first-child{
+	width:100%;
+} 
+.header .links .icon span:nth-child(2){
+	width:70%;
+	transition:0.3s
+}
+.header .links .icon span:last-child{
+	width:100px;
+}
+.header .links ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-color: #f6f6f6;
+	position:absolute;
+	right:0;
+	min-width:200px;
+	top: calc(100% + 15px);
+	display:none;
+	z-index:1;
+}
+.header .links ul::before{
+	content:"";
+	border-width:10px;
+	border-style:solid;
+	border-color: transparent transparent #f6f6f6 transparent;
+	position:absolute;
+	right:0px;
+	top:-20px
+}
+.header .links:hover ul{
+	display:block;
+}
+.header .links ul li a{
+	display:block;
+	padding:15px;
+	text-decoration:none;
+	color :#333;
+	transition: 0.3s;
+}
+
+.header .links ul li .name{
+    display: none;
+}
+
+.header .links ul li .profile{
+    display: none;
+}
+.header .links ul li .logout{
+	color:red;
+}
+.header .links ul li .profile{
+	color: rgb(53, 53, 255);
+}
+.header .links ul li .control{
+	color:#29d0d8;
+}
+.header .links ul li a:hover {
+	padding-left:25px;
+}
+.header .links ul li:not(:last-child) a {
+	border-bottom: 1px solid #ddd;
+}
+/*End header*/

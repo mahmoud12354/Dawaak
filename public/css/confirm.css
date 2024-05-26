@@ -1,0 +1,43 @@
+body {
+    display: block;
+    background: linear-gradient(105.23deg, #6be5ed 4.59%, #FFFFFF 52.42%, #FFFFFF 100%);
+    
+}
+.containeer{
+    text-align: center;
+    width: 50%;
+    border: 1px solid;
+    margin-top: 100px;
+}
+
+.containeer .cart .info p{
+    display: flex;
+    font-size: 20px;
+    margin-left: 68px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.containeer .cart .buttons p{
+    display: flex;
+    margin-left: 68px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.containeer .cart .buttons input{
+    width: 38%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 208px;
+    display: block;
+    margin-bottom: 10px;
+}
+.containeer .cart .buttons .addcard{
+    color: white;
+    background: #29D0D9;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 6px 30px;
+	font-weight: 500;
+}
